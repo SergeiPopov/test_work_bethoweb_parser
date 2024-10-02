@@ -1,0 +1,28 @@
+https://www.bethowen.ru/shops/
+
+BETHOWEN_GEO_TOWN=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0; (Москва)
+BETHOWEN_GEO_TOWN_ID=84;
+
+https://www.bethowen.ru/api/local/v1/cities/search?term=Перемь&city_type=all
+
+POST https://www.bethowen.ru/api/local/v1/users/location
+payload {"location_id":"158007"} Получение id из апи поиска городов
+Назначает куки типа BETHOWEN_GEO
+
+
+https://www.bethowen.ru/api/local/v1/deliveries/pickup-points?is_checkout=true&city_id=158007
+Пункты выдачи
+
+https://www.bethowen.ru/local/ajax/reviews/get-product-full-review-info.php?product_id=524247
+Отзывы
+
+
+https://www.bethowen.ru/api/local/v1/catalog/products/524247/details
+информация о товаре со всеми граммовками и похожими товарами
+
+https://www.bethowen.ru/api/local/v1/catalog/offers/532973/details (конкретный кг)
+Описание товара, магазины
+
+
+https://www.bethowen.ru/api/local/v1/catalog/list?limit=20&offset=0&sort_type=popular&id[]=524247&id[]=532978&id[]=572080&id[]=608262&id[]=255935&id[]=253510&id[]=253537&id[]=349116&id[]=253394&id[]=255908&id[]=349010&id[]=349007&id[]=349660&id[]=349663&id[]=349129&id[]=256015&id[]=276332&id[]=452624&id[]=452621&id[]=508533
+получение информации о товарах на странице каталога
